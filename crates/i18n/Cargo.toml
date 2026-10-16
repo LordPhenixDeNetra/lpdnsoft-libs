@@ -8,12 +8,16 @@ license.workspace = true
 
 [dependencies]
 lpdnsoft-i18n-catalog.workspace = true
+lpdnsoft-i18n-macros.workspace = true
 fluent-bundle.workspace = true
 fluent-langneg.workspace = true
 unic-langid.workspace = true
 sys-locale.workspace = true
 thiserror.workspace = true
 tracing.workspace = true
+
+[dev-dependencies]
+trybuild.workspace = true
 
 [lints]
 workspace = true

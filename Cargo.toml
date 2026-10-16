@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/*"]
+members = ["crates/*", "xtask"]
 resolver = "3"
 
 [workspace.package]
@@ -19,9 +19,9 @@ dbg_macro = "deny"
 todo = "deny"
 
 [workspace.dependencies]
-lpdnsoft-atomic = { path = "crates/atomic" }
-lpdnsoft-i18n-catalog = { path = "crates/i18n-catalog" }
-lpdnsoft-i18n-macros = { path = "crates/i18n-macros" }
+lpdnsoft-atomic = { path = "crates/atomic", version = "0.1.0" }
+lpdnsoft-i18n-catalog = { path = "crates/i18n-catalog", version = "0.1.0" }
+lpdnsoft-i18n-macros = { path = "crates/i18n-macros", version = "0.1.0" }
 fluent-bundle = "0.16"
 fluent-syntax = "0.12"
 fluent-langneg = "0.13"

@@ -1,0 +1,5 @@
+error: message `does-not-exist` manquant pour : en, fr
+ --> tests/ui/missing_key.rs:9:22
+  |
+9 |     let _ = t!(&loc, "does-not-exist");
+  |                      ^^^^^^^^^^^^^^^^

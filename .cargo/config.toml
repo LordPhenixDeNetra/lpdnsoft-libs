@@ -1,0 +1,6 @@
+[alias]
+xtask = "run --package xtask --"
+
+[env]
+# Dossier des .ftl lu par la macro t! pour les tests de ce dépôt.
+LPDNSOFT_I18N_LOCALES_DIR = { value = "crates/i18n/tests/locales", relative = true }
