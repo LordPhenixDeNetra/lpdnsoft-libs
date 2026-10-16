@@ -1,0 +1,20 @@
+[package]
+name = "lpdnsoft-settings"
+description = "Réglages TOML typés et versionnés : chemins par OS, migrations, récupération."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+lpdnsoft-atomic.workspace = true
+directories.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+toml.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[lints]
+workspace = true
