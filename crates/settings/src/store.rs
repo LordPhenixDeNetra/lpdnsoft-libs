@@ -98,6 +98,8 @@ impl<S: Settings> SettingsStore<S> {
         // `schema_version` écrit en tête, à la main : `toml::Table` trie ses clés.
         let body = toml::to_string(&loaded.settings)?;
         let text = format!("{VERSION_KEY} = {}\n{body}", S::SCHEMA_VERSION);
+        // Premier lancement : le dossier de configuration n'existe pas encore.
+        std::fs::create_dir_all(&self.dir)?;
         lpdnsoft_atomic::write_atomic(&self.path(), text.as_bytes())?;
         Ok(())
     }

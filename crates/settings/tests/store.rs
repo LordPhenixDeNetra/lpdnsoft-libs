@@ -137,3 +137,12 @@ fn missing_schema_version_is_treated_as_1() {
         Some(Recovery::Migrated { from: 1 })
     ));
 }
+
+#[test]
+fn save_creates_missing_dir() {
+    let dir = tempfile::tempdir().unwrap();
+    let store = SettingsStore::<Demo>::new(dir.path().join("Élodie réglages").join("ankou"));
+    let loaded = store.load().unwrap();
+    store.save(&loaded).unwrap();
+    assert!(store.path().exists());
+}
