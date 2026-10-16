@@ -24,7 +24,7 @@ lpdnsoft-i18n-catalog = { path = "crates/i18n-catalog" }
 lpdnsoft-i18n-macros = { path = "crates/i18n-macros" }
 fluent-bundle = "0.16"
 fluent-syntax = "0.12"
-fluent-langneg = "0.14"
+fluent-langneg = "0.13"
 unic-langid = { version = "0.9", features = ["macros"] }
 sys-locale = "0.3"
 directories = "6"

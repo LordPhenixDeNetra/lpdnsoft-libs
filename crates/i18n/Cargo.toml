@@ -1,0 +1,19 @@
+[package]
+name = "lpdnsoft-i18n"
+description = "Traduction Fluent, négociation de langue et macro t! vérifiée à la compilation."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+lpdnsoft-i18n-catalog.workspace = true
+fluent-bundle.workspace = true
+fluent-langneg.workspace = true
+unic-langid.workspace = true
+sys-locale.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+
+[lints]
+workspace = true

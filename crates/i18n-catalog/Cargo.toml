@@ -1,0 +1,14 @@
+[package]
+name = "lpdnsoft-i18n-catalog"
+description = "Lecture et validation des catalogues Fluent (.ftl), sans proc-macro."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+fluent-syntax.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true
