@@ -1,0 +1,17 @@
+[package]
+name = "lpdnsoft-ui"
+description = "Thème egui LPDNSoft (clair/sombre) et composants communs."
+version.workspace = true
+edition.workspace = true
+# egui 0.36 l'exige.
+rust-version = "1.95"
+license.workspace = true
+
+[dependencies]
+egui.workspace = true
+
+[dev-dependencies]
+egui_kittest.workspace = true
+
+[lints]
+workspace = true
