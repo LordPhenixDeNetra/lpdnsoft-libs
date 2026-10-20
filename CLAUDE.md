@@ -10,6 +10,7 @@ Bibliothèques Rust communes aux applications LPDNSoft (aNkou…). Aucune dépen
 - `crates/i18n-catalog` — lecture/validation des `.ftl` (sans proc-macro).
 - `crates/i18n-macros` — macro `t!` vérifiée à la compilation.
 - `crates/i18n` — `Localizer`, négociation de langue, `system_locales`, ré-exporte `t!`.
+- `crates/ui` — `lpdnsoft-ui` (egui 0.36, Rust ≥ 1.95) : `install` (thème clair/sombre, accent `ACCENT`), `card`, `Tone` / `status_color`.
 - `xtask` — contrôles.
 
 ## Commande unique
@@ -18,7 +19,7 @@ Bibliothèques Rust communes aux applications LPDNSoft (aNkou…). Aucune dépen
 cargo xtask ci   # fmt --check, clippy -D warnings, tests, cargo deny check
 ```
 
-Prérequis : Rust stable ≥ 1.90, `cargo install cargo-deny --locked`.
+Prérequis : Rust stable ≥ 1.90 (1.95 pour `lpdnsoft-ui`), `cargo install cargo-deny --locked`.
 
 ## Règles
 
